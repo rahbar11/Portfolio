@@ -7,7 +7,10 @@ import back from './back.svg';
 import './Intro.css';
 
 const Intro = ({introContents, setIntroContents, theme, portfolio, twilio}) => {
-	let size = window.innerWidth/5
+	let size = '25%'
+	if (window.innerheight > window.innerWidth) {
+		size = '45%'
+	}
 
 	const intro = useRef(null)
 	const image = useRef(null)
@@ -63,7 +66,7 @@ return (
 					}
 				}} 
 				className="mb3 tr-5 center shadow-2 pointer br-100" 
-				style={{width: '20%', aspectRatio: '1 / 1', position: 'relative', background: (theme === 'light' ? 'white' : 'black')}}
+				style={{width: size, aspectRatio: '1 / 1', position: 'relative', background: (theme === 'light' ? 'white' : 'black')}}
 			>
 				<img 
 					ref={back_element} 
