@@ -1,10 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: 0.5s color;
+}
+
+.tr-5 {
+  transition: 0.5s;
+}
+
+.margin3 {
+  margin: 3%;
+}
+
+.padding2 {
+  padding: 2%;
+}
+
+.hover-orange:hover {
+  background-color: rgba(255, 162, 0, 0.3);
 }
 
 code {

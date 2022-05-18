@@ -1,0 +1,16 @@
+input,textarea:focus {
+	outline: none;
+}
+
+input::placeholder,textarea::placeholder {
+	color: rgba(255, 162, 0, 0.5);
+	font-weight: 700;
+}
+
+.button-small {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 3% 6% 3% 6%;
+	border-radius: 2em;
+	cursor: pointer;
+}

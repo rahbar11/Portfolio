@@ -1,0 +1,20 @@
+.invisible {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.pa-adj {
+	padding: 2% 2.33% 2% 1.67%;
+}
+
+.h-85 {
+	height: 85%;
+}
+
+.br-round {
+	border-radius: 1em;
+}
+
+.fs5 {
+	font-size: 0.70vw;
+}
