@@ -37,7 +37,7 @@ function App() {
   }
 
   const twilio = {
-    phoneNumber: '$YOUR_NUMBER' // '+9198XXXXXXX1'
+    phoneNumber: '$YOUR_NUMBER', // '+9198XXXXXXX1'
     accountSid: 'AC913fc1004184679ec92f439b9a2830a6',
     authToken: '$TWILIO_AUTH_TOKEN',
     messagingServiceSid: 'MGdf03208ad653daea144af91447b7edfd'
