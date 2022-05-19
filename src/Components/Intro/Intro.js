@@ -16,7 +16,7 @@ const Intro = ({introContents, setIntroContents, theme, portfolio, twilio}) => {
 	useEffect(() => {
 		if (introContents) {
 			image.current.style.transitionDelay = '0s'
-			intro.current.style.transitionDelay = '0.1s'
+			intro.current.style.transitionDelay = '0s'
 			back_element.current.style.transitionDelay = '0.5s, 0.5s'
 			back_element.current.style.transitionProperty = 'visibility, opacity'
 			intro_contents.current.style.transitionDelay = '0.5s, 0.5s'
