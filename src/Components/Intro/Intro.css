@@ -11,10 +11,20 @@
 	height: 85%;
 }
 
-.br-round {
-	border-radius: 1em;
-}
-
 .fs5 {
 	font-size: 0.70vw;
+}
+
+.screen-width {
+	width: 20%;
+}
+
+@media screen and (max-width: 480px) {
+	.screen-width {
+		width: 45%;
+	}
+	
+	.fs5 {
+		font-size: 1.6vw;
+	}
 }

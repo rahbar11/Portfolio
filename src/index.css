@@ -22,6 +22,10 @@ body {
   padding: 2%;
 }
 
+.br-round {
+  border-radius: 1em;
+}
+
 .hover-orange:hover {
   background-color: rgba(255, 162, 0, 0.3);
 }
