@@ -29,15 +29,32 @@ const Info = ({theme, portfolio}) => {
 					</tbody>
 				</table>
 				<div className='absolute padding2 margin3 bottom-0 flex' >
-					<a className='flex justify-center items-center br-100 hover-orange' href={portfolio.github} style={{width: '13%', aspectRatio: '1 / 1'}}>
+					<a 
+						className='flex justify-center items-center br-100 hover-orange' 
+						target='_blank' 
+						rel="noopener noreferrer"
+						href={portfolio.github} 
+						style={{width: '13%', aspectRatio: '1 / 1'}}
+					>
 						<Github fill='rgb(255, 162, 0)' width='70%' />
 					</a>
-					<a className='button tr-5 shadow2 ma-auto' href='#' style={{
+					<a 
+						className='button tr-5 shadow2 ma-auto' 
+						target='_blank' 
+						rel="noopener noreferrer"
+						href='#' 
+						style={{
 						color: (theme === 'light' ? 'black' : 'white'),
 						background: (theme === 'light' ? 'rgb(255, 162, 0)' : 'rgb(180, 100, 0)')
 					  }}
 					>Resume</a>
-					<a className='flex justify-center items-center br-100 hover-orange' href={portfolio.linkedin} style={{width: '13%', aspectRatio: '1 / 1'}}>
+					<a 
+						className='flex justify-center items-center br-100 hover-orange' 
+						target='_blank' 
+						rel="noopener noreferrer"
+						href={portfolio.linkedin} 
+						style={{width: '13%', aspectRatio: '1 / 1'}}
+					>
 						<LinkedIn fill='rgb(255, 162, 0)' width='70%' />
 					</a>
 				</div>
