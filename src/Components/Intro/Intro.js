@@ -17,9 +17,9 @@ const Intro = ({introContents, setIntroContents, theme, portfolio, twilio}) => {
 		if (introContents) {
 			image.current.style.transitionDelay = '0s'
 			intro.current.style.transitionDelay = '0.1s'
-			back_element.current.style.transitionDelay = '0.6s, 0.6s, 0s'
-			back_element.current.style.transitionProperty = 'visibility, opacity, background'
-			intro_contents.current.style.transitionDelay = '0.6s, 0.6s'
+			back_element.current.style.transitionDelay = '0.5s, 0.5s'
+			back_element.current.style.transitionProperty = 'visibility, opacity'
+			intro_contents.current.style.transitionDelay = '0.5s, 0.5s'
 			intro_contents.current.style.transitionProperty = 'visibility, opacity'
 			image.current.style.transform = 'scale(0.25)';
 			image.current.style.top = '-40%';
@@ -37,7 +37,7 @@ const Intro = ({introContents, setIntroContents, theme, portfolio, twilio}) => {
 			intro_contents.current.style.transitionDelay = '0s'
 			back_element.current.style.transitionDelay = '0s'
 			intro.current.style.transitionDelay = '0.1s'
-			image.current.style.transitionDelay = '0s, 0.2s'
+			image.current.style.transitionDelay = '0s, 0.1s'
 			image.current.style.transitionProperty = 'top, transform'
 			intro_contents.current.style.width = '0%'
 			intro_contents.current.style.opacity = '0'
@@ -83,7 +83,7 @@ return (
 					style={{position: 'absolute', top: '5%', left: '5%'}}
 				/>
 				<div ref={intro_contents} className='tr-5 fs5 w-100 invisible h-85' style={{position: 'absolute', top: '15%'}}>
-					<h2 className='br-round center w-50 padding2' style={{background: 'rgba(255, 162, 0, 0.5)'}}>{introContents}</h2>
+					<h2 className='tr-5 br-round center w-50 padding2' style={{background: 'rgba(255, 162, 0, 0.5)', color: (theme === 'light' ? 'black' : 'white')}}>{introContents}</h2>
 					{introContents === 'Info' ? 
 						<Info portfolio={portfolio} theme={theme}/> : 
 						(introContents === 'Projects' ? 

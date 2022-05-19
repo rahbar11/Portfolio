@@ -9,7 +9,7 @@ const Info = ({theme, portfolio}) => {
 	const age = Math.floor((today-birthdate)/1000/60/60/24/365.25)
 	return (
 			<div className='w-100 relative' style={{height: '75%'}}>
-				<table className='margin3'>
+				<table className='tr-5 margin3' style={{color: (theme === 'light' ? 'black' : 'white')}}>
 					<tbody>
 						<tr className='padding2'>
 							<th className='tl'>Name</th>
