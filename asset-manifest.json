@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5c5f2cce.css",
-    "main.js": "/Portfolio/static/js/main.dbbeae4e.js",
+    "main.css": "/Portfolio/static/css/main.3e5ac6ef.css",
+    "main.js": "/Portfolio/static/js/main.9e21eeb8.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.acbe49f9efb6ebb95442.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.acbe49f9efb6ebb95442.png",
     "static/media/Renin Chan.jpg": "/Portfolio/static/media/Renin Chan.7b8da00c065da23ed323.jpg",
     "index.html": "/Portfolio/index.html",
-    "static/media/back.svg": "/Portfolio/static/media/back.921e9a7035a184a5a2fb3d053140aec4.svg",
-    "main.5c5f2cce.css.map": "/Portfolio/static/css/main.5c5f2cce.css.map",
-    "main.dbbeae4e.js.map": "/Portfolio/static/js/main.dbbeae4e.js.map",
+    "main.3e5ac6ef.css.map": "/Portfolio/static/css/main.3e5ac6ef.css.map",
+    "main.9e21eeb8.js.map": "/Portfolio/static/js/main.9e21eeb8.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c5f2cce.css",
-    "static/js/main.dbbeae4e.js"
+    "static/css/main.3e5ac6ef.css",
+    "static/js/main.9e21eeb8.js"
   ]
 }
