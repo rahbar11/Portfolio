@@ -23,7 +23,7 @@ const Switch = ({theme, setTheme}) => {
 
 	return (
 		<div onClick={applyTheme} ref={outline} className='tr-5 pointer br4 tc ma1 relative' style={{width:'32px', height: '16px', border: '2px solid white'}}>
-			<div ref={circle} className='tr-5 br-100 absolute bg-white' style={{height:'10px', width: '10px', top:'1px', left:'1px'}}>
+			<div ref={circle} className='tr-5 br-100 absolute bg-white' style={{height:'10px', width: '10px', top:'0.9px', left:'1px'}}>
 			</div>
 		</div>
 	)

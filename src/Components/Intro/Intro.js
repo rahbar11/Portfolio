@@ -3,7 +3,6 @@ import Info from '../Info/Info';
 import ProjectList from '../ProjectList/ProjectList';
 import Contact from '../Contact/Contact';
 import logo from './logo.png';
-import back from './back.svg';
 import './Intro.css';
 
 const Intro = ({introContents, setIntroContents, theme, portfolio, twilio}) => {
@@ -64,16 +63,32 @@ return (
 				className="screen-width mb3 tr-5 center shadow-2 pointer br-100" 
 				style={{aspectRatio: '1 / 1', position: 'relative', background: (theme === 'light' ? 'white' : 'black')}}
 			>
-				<img 
-					ref={back_element} 
-					alt='Back'
+				<svg 
+					ref={back_element}
 					onClick={() => {
 							setIntroContents('');
 						}}
-					src={back} 
-					className='pa-adj hover-orange invisible pointer margin3 br-100' 
-					style={{position: 'absolute', top:'0%', left:'0%', width: '5%', height: 'auto'}} 
-				/>
+					className='hover-orange invisible pointer padding2 margin3 br-100' 
+					style={{position: 'absolute', top:'0%', left:'0%', width: '5%', enableBackground:'new 0 0 512 512'}}
+					xmlns="http://www.w3.org/2000/svg" 
+					xmlnsXlink="http://www.w3.org/1999/xlink" 
+					xmlnsSvgjs="http://svgjs.com/svgjs" 
+					version="1.1" 
+					x="0" 
+					y="0" 
+					viewBox="0 0 24 24" 
+					xmlSpace="preserve"
+				>
+					<g>
+						<path 
+							style={{transform: "scale(0.87)"}}
+							xmlns="http://www.w3.org/2000/svg" 
+							d="M17.921,1.505a1.5,1.5,0,0,1-.44,1.06L9.809,10.237a2.5,2.5,0,0,0,0,3.536l7.662,7.662a1.5,1.5,0,0,1-2.121,2.121L7.688,15.9a5.506,5.506,0,0,1,0-7.779L15.36.444a1.5,1.5,0,0,1,2.561,1.061Z" 
+							fill="rgb(255, 162, 0)" 
+							data-original="#000000"
+						/>
+					</g>
+				</svg>
 
 				<img 
 					ref={image} 
