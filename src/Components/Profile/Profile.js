@@ -1,8 +1,8 @@
-import './Info.css'
+import './Profile.css'
 import Github from './Github';
 import LinkedIn from './LinkedIn.js';
 
-const Info = ({theme, portfolio}) => {
+const Profile = ({theme, portfolio}) => {
 	const {name, birthday, skills} = portfolio;
 	const birthdate = new Date(birthday);
 	const today = new Date();
@@ -62,4 +62,4 @@ const Info = ({theme, portfolio}) => {
 	)
 }
 
-export default Info;
+export default Profile;

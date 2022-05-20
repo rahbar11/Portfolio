@@ -1,5 +1,5 @@
 import {useEffect, useRef} from 'react';
-import Info from '../Info/Info';
+import Profile from '../Profile/Profile';
 import ProjectList from '../ProjectList/ProjectList';
 import Contact from '../Contact/Contact';
 import logo from './logo.png';
@@ -35,7 +35,7 @@ const Intro = ({introContents, setIntroContents, theme, portfolio, twilio}) => {
 		} else {
 			intro_contents.current.style.transitionDelay = '0s'
 			back_element.current.style.transitionDelay = '0s'
-			intro.current.style.transitionDelay = '0.1s'
+			intro.current.style.transitionDelay = '0s'
 			image.current.style.transitionDelay = '0s, 0.1s'
 			image.current.style.transitionProperty = 'top, transform'
 			intro_contents.current.style.width = '0%'
@@ -57,7 +57,7 @@ return (
 				ref={intro} 
 				onClick={() => {
 					if (!introContents) {
-						setIntroContents('Info')
+						setIntroContents('Profile')
 					}
 				}} 
 				className="screen-width mb3 tr-5 center shadow-2 pointer br-100" 
@@ -99,8 +99,8 @@ return (
 				/>
 				<div ref={intro_contents} className='tr-5 fs5 w-100 invisible h-85' style={{position: 'absolute', top: '15%'}}>
 					<h2 className='tr-5 br-round center w-50 padding2' style={{background: 'rgba(255, 162, 0, 0.5)', color: (theme === 'light' ? 'black' : 'white')}}>{introContents}</h2>
-					{introContents === 'Info' ? 
-						<Info portfolio={portfolio} theme={theme}/> : 
+					{introContents === 'Profile' ? 
+						<Profile portfolio={portfolio} theme={theme}/> : 
 						(introContents === 'Projects' ? 
 							<ProjectList theme={theme} projects={portfolio.projects} /> : 
 							(introContents === 'Contact' ? <Contact twilio={twilio} theme={theme} /> : '')

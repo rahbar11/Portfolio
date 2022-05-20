@@ -15,3 +15,13 @@
 .scroll {
 	border: 1px solid rgba(255, 162, 0, 0.5);
 }
+
+@media screen and (max-width: 480px) {
+	.scroll::-webkit-scrollbar {
+		height: 1.8vw;
+		width: 1.8vw;
+	}
+	.scroll::-webkit-scrollbar-track {
+		margin: 1.58vw;
+	}
+}
