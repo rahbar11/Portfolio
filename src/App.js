@@ -10,7 +10,8 @@ import Portfolio from './Project Images/Portfolio.png'
 
 function App() {
   const [theme, setTheme] = useState('light');
-  const [introContents, setIntroContents] = useState('');
+  const [isIntroOpen, setIsIntroOpen] = useState(false);
+  const [introContents, setIntroContents] = useState('Profile');
 
   const portfolio = {
     name: 'Rahbar Khan',
@@ -59,8 +60,21 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar theme={theme} setTheme={setTheme} introContents={introContents} setIntroContents={setIntroContents} />
-      <Intro portfolio={portfolio} twilio={twilio} introContents={introContents} setIntroContents={setIntroContents} theme={theme} />
+      <NavBar 
+        theme={theme} 
+        setTheme={setTheme} 
+        setIsIntroOpen={setIsIntroOpen} 
+        setIntroContents={setIntroContents} 
+      />
+      <Intro 
+        portfolio={portfolio} 
+        twilio={twilio} 
+        isIntroOpen={isIntroOpen} 
+        setIsIntroOpen={setIsIntroOpen} 
+        introContents={introContents} 
+        setIntroContents={setIntroContents} 
+        theme={theme} 
+      />
     </div>
   );
 }
