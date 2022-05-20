@@ -15,7 +15,6 @@ const Intro = ({introContents, setIntroContents, theme, portfolio, twilio}) => {
 	useEffect(() => {
 		if (introContents) {
 			image.current.style.transitionDelay = '0s'
-			intro.current.style.transitionDelay = '0s'
 			back_element.current.style.transitionDelay = '0.5s, 0.5s'
 			back_element.current.style.transitionProperty = 'visibility, opacity'
 			intro_contents.current.style.transitionDelay = '0.5s, 0.5s'
@@ -35,7 +34,6 @@ const Intro = ({introContents, setIntroContents, theme, portfolio, twilio}) => {
 		} else {
 			intro_contents.current.style.transitionDelay = '0s'
 			back_element.current.style.transitionDelay = '0s'
-			intro.current.style.transitionDelay = '0s'
 			image.current.style.transitionDelay = '0s, 0.1s'
 			image.current.style.transitionProperty = 'top, transform'
 			intro_contents.current.style.width = '0%'
