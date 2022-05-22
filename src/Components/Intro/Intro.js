@@ -5,7 +5,7 @@ import Contact from '../Contact/Contact';
 import logo from './logo.png';
 import './Intro.css';
 
-const Intro = ({isIntroOpen, setIsIntroOpen, introContents, setIntroContents, theme, portfolio, twilio}) => {
+const Intro = ({isIntroOpen, setIsIntroOpen, introContents, setIntroContents, theme, colors, portfolio, twilio}) => {
 
 	const intro = useRef(null)
 	const image = useRef(null)
@@ -60,7 +60,7 @@ return (
 					}
 				}} 
 				className="screen-width mb3 tr-5 center shadow-2 pointer br-100" 
-				style={{aspectRatio: '1 / 1', position: 'relative', background: (theme === 'light' ? 'white' : 'black')}}
+				style={{aspectRatio: '1 / 1', position: 'relative', background: colors.background[theme]}}
 			>
 				<svg 
 					ref={back_element}
@@ -80,10 +80,11 @@ return (
 				>
 					<g>
 						<path 
+							className='tr-5'
 							style={{transform: "scale(0.87)"}}
 							xmlns="http://www.w3.org/2000/svg" 
 							d="M17.921,1.505a1.5,1.5,0,0,1-.44,1.06L9.809,10.237a2.5,2.5,0,0,0,0,3.536l7.662,7.662a1.5,1.5,0,0,1-2.121,2.121L7.688,15.9a5.506,5.506,0,0,1,0-7.779L15.36.444a1.5,1.5,0,0,1,2.561,1.061Z" 
-							fill="rgb(255, 162, 0)" 
+							fill={colors.main[theme]} 
 							data-original="#000000"
 						/>
 					</g>
@@ -100,12 +101,12 @@ return (
 					style={{position: 'absolute', top: '5%', left: '5%'}}
 				/>
 				<div ref={intro_contents} className='tr-5 fs5 w-100 invisible h-85' style={{position: 'absolute', top: '15%'}}>
-					<h2 className='tr-5 br-round center w-50 padding2' style={{background: 'rgba(255, 162, 0, 0.5)', color: (theme === 'light' ? 'black' : 'white')}}>{introContents}</h2>
+					<h2 className='tr-5 br-round center w-50 padding2' style={{background: colors.title[theme], color: colors.font[theme]}}>{introContents}</h2>
 					{introContents === 'Profile' ? 
-						<Profile portfolio={portfolio} theme={theme}/> : 
+						<Profile portfolio={portfolio} theme={theme} colors={colors} /> : 
 						(introContents === 'Projects' ? 
-							<ProjectList theme={theme} projects={portfolio.projects} /> : 
-							(introContents === 'Contact' ? <Contact twilio={twilio} theme={theme} /> : '')
+							<ProjectList projects={portfolio.projects} theme={theme} colors={colors} /> : 
+							(introContents === 'Contact' ? <Contact twilio={twilio} theme={theme} colors={colors} /> : '')
 							)}
 				</div>
 			</div>

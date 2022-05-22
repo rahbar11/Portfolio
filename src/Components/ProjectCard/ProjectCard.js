@@ -1,6 +1,6 @@
 import './ProjectCard.css';
 
-const ProjectCard = ({title, description, tools, link, image, theme}) => {
+const ProjectCard = ({title, description, tools, link, image, theme, colors}) => {
 	return (
 		<a 
 			href={link}
@@ -9,8 +9,8 @@ const ProjectCard = ({title, description, tools, link, image, theme}) => {
 			className='tr-5 br-round grow-size pointer padding2 margin3 shadow5 tc no-underline' 
 			style={{
 				flex: '0 0 50%',
-				color: (theme === 'light' ? 'black' : 'white'),
-				background: (theme === 'light' ? 'rgb(255, 162, 0)' : 'rgb(180, 100, 0)')
+				color: colors.font[theme],
+				background: colors.main[theme]
 			}}
 		>
 			<img className='w-25 br-100' alt={title} src={image} />

@@ -2,14 +2,14 @@ import './Profile.css'
 import Github from './Github';
 import LinkedIn from './LinkedIn.js';
 
-const Profile = ({theme, portfolio}) => {
+const Profile = ({portfolio, theme, colors}) => {
 	const {name, birthday, skills} = portfolio;
 	const birthdate = new Date(birthday);
 	const today = new Date();
 	const age = Math.floor((today-birthdate)/1000/60/60/24/365.25)
 	return (
 			<div className='w-100 relative' style={{height: '75%'}}>
-				<table className='tr-5 margin3' style={{color: (theme === 'light' ? 'black' : 'white')}}>
+				<table className='tr-5 margin3' style={{color: colors.font[theme]}}>
 					<tbody>
 						<tr className='padding2'>
 							<th className='tl'>Name</th>
@@ -36,7 +36,7 @@ const Profile = ({theme, portfolio}) => {
 						href={portfolio.github} 
 						style={{width: '13%', aspectRatio: '1 / 1'}}
 					>
-						<Github fill='rgb(255, 162, 0)' width='70%' />
+						<Github fill={colors.main[theme]} width='70%' />
 					</a>
 					<a 
 						className='button tr-5 shadow2 ma-auto' 
@@ -44,8 +44,8 @@ const Profile = ({theme, portfolio}) => {
 						rel="noopener noreferrer"
 						href='#' 
 						style={{
-						color: (theme === 'light' ? 'black' : 'white'),
-						background: (theme === 'light' ? 'rgb(255, 162, 0)' : 'rgb(180, 100, 0)')
+						color: colors.font[theme],
+						background: colors.main[theme]
 					  }}
 					>Resume</a>
 					<a 
@@ -55,7 +55,7 @@ const Profile = ({theme, portfolio}) => {
 						href={portfolio.linkedin} 
 						style={{width: '13%', aspectRatio: '1 / 1'}}
 					>
-						<LinkedIn fill='rgb(255, 162, 0)' width='70%' />
+						<LinkedIn fill={colors.main[theme]} width='70%' />
 					</a>
 				</div>
 			</div>

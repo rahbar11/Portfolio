@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import './Contact.css';
 
-const Contact = ({theme, twilio}) => {
+const Contact = ({twilio, theme, colors}) => {
 
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
@@ -47,8 +47,8 @@ const Contact = ({theme, twilio}) => {
 					height:'7%', 
 					width: '80%', 
 					border: '0.1em solid rgba(255, 162, 0, 0.5)', 
-					color: (theme === 'light' ? 'black' : 'white'), 
-					background: (theme === 'light' ? 'white' : 'black')}} 
+					color: colors.font[theme], 
+					background: 'transparent'}} 
 			/>
 			<textarea 
 				className='tr-5 br-round margin3' 
@@ -59,8 +59,8 @@ const Contact = ({theme, twilio}) => {
 					width:'85%', 
 					resize: 'none',
 					border: '0.1em solid rgba(255, 162, 0, 0.5)', 
-					color: (theme === 'light' ? 'black' : 'white'), 
-					background: (theme === 'light' ? 'white' : 'black')}} 
+					color: colors.font[theme], 
+					background: 'transparent'}} 
 			></textarea>
 			<p 
 				className="absolute"
@@ -90,8 +90,8 @@ const Contact = ({theme, twilio}) => {
 				style={{
 						bottom: '3%',
 						right: '7%',
-						color: (theme === 'light' ? 'black' : 'white'),
-						background: (theme === 'light' ? 'rgb(255, 162, 0)' : 'rgb(180, 100, 0)')
+						color: colors.font[theme],
+						background: colors.main[theme]
 					  }}
 			>Send</div>
 		</>

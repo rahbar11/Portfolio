@@ -2,14 +2,14 @@ import Switch from '../Switch/Switch';
 import Sun from './Sun';
 import Moon from './Moon'
 
-const NavBar = ({setIsIntroOpen, setIntroContents, theme, setTheme}) => {
+const NavBar = ({setIsIntroOpen, setIntroContents, theme, setTheme, colors}) => {
 	return (
 		<>
-			<nav style={{display: 'flex', justifyContent: 'flex-end'}}>
+			<nav className='tr-5' style={{display: 'flex', justifyContent: 'flex-end', color: colors.font[theme]}}>
 				<div className='pl3 flex items-center'>
-					<Sun setTheme={setTheme} fill={(theme === 'light' ? 'black' : 'white')} width='20px' />
-					<Switch setTheme={setTheme} theme={theme} />
-					<Moon setTheme={setTheme} fill={(theme === 'light' ? 'black' : 'white')} width='17px' />
+					<Sun setTheme={setTheme} fill={colors.font[theme]} width='20px' />
+					<Switch setTheme={setTheme} theme={theme} colors={colors} />
+					<Moon setTheme={setTheme} fill={colors.font[theme]} width='17px' />
 				</div>
 				<p 
 					onClick={() => {

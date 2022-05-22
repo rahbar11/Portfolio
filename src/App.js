@@ -13,6 +13,7 @@ function App() {
   const [isIntroOpen, setIsIntroOpen] = useState(false);
   const [introContents, setIntroContents] = useState('Profile');
 
+//Portfolio Details:
   const portfolio = {
     name: 'Rahbar Khan',
     birthday: '2000-04-27', //YYYY-MM-DD format (required to calculate age)
@@ -37,6 +38,31 @@ function App() {
     ]
   }
 
+
+//Colors Palette:
+  const colors = {
+    gradient: {
+      light: 'rgb(255, 162, 0), rgb(238, 231, 195)',
+      dark: 'rgb(180, 100, 0), rgb(20, 18, 0)'
+    },
+    main: {
+      light: 'rgb(255, 162, 0)',
+      dark: 'rgb(180, 100, 0)'
+    },
+    title: {
+      light: 'rgba(255, 162, 0, 0.5)',
+      dark: 'rgba(255, 162, 0, 0.5)'
+    },
+    font: {
+      light: 'black',
+      dark: 'white'
+    },
+    background: {
+      light: 'white',
+      dark: 'black'
+    }
+  }
+
   const twilio = {
     phoneNumber: '$YOUR_NUMBER', // '+9198XXXXXXX1'
     accountSid: 'AC913fc1004184679ec92f439b9a2830a6',
@@ -51,17 +77,14 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (theme === 'light') {
-      document.body.style = 'background: linear-gradient(to bottom, rgb(255, 162, 0), rgb(238, 231, 195)) no-repeat fixed center;'
-    } else {
-      document.body.style = 'background: linear-gradient(to bottom, rgb(200, 128, 0), rgb(10, 9, 0)) no-repeat fixed center;\ncolor: white'
-    }
+      document.body.style = `background: linear-gradient(to bottom, ${colors.gradient[theme]}) no-repeat fixed center;\ncolor: ${colors.font[theme]}`
   }, [theme])
 
   return (
     <div className="App">
       <NavBar 
         theme={theme} 
+        colors = {colors}
         setTheme={setTheme} 
         setIsIntroOpen={setIsIntroOpen} 
         setIntroContents={setIntroContents} 
@@ -74,6 +97,7 @@ function App() {
         introContents={introContents} 
         setIntroContents={setIntroContents} 
         theme={theme} 
+        colors = {colors}
       />
     </div>
   );
