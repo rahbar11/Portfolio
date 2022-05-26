@@ -5,7 +5,7 @@ import Moon from './Moon'
 const NavBar = ({setIsIntroOpen, setIntroContents, theme, setTheme, colors}) => {
 	return (
 		<>
-			<nav className='tr-5' style={{display: 'flex', justifyContent: 'flex-end', color: colors.font[theme]}}>
+			<nav className='animate' style={{display: 'flex', justifyContent: 'flex-end', color: colors.font[theme]}}>
 				<div className='pl3 flex items-center'>
 					<Sun setTheme={setTheme} fill={colors.font[theme]} width='20px' />
 					<Switch setTheme={setTheme} theme={theme} colors={colors} />

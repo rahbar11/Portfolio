@@ -3,17 +3,8 @@
 	width: 0.80vw;
 }
 
-.scroll::-webkit-scrollbar-thumb {
-	background: rgba(255, 162, 0, 0.5);
-	border-radius: 5em;
-}
-
 .scroll::-webkit-scrollbar-track {
 	margin: 0.70vw;
-}
-
-.scroll {
-	border: 1px solid rgba(255, 162, 0, 0.5);
 }
 
 @media screen and (max-width: 480px) {

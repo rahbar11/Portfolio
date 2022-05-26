@@ -40,7 +40,7 @@ const Contact = ({twilio, theme, colors}) => {
 	return (
 		<>
 			<input 
-				className='tr-5 br-round margin3' 
+				className='animate br-round margin3' 
 				placeholder='E-Mail' 
 				onChange={(event) => setEmail(event.target.value)}
 				style={{
@@ -51,7 +51,7 @@ const Contact = ({twilio, theme, colors}) => {
 					background: 'transparent'}} 
 			/>
 			<textarea 
-				className='tr-5 br-round margin3' 
+				className='animate br-round margin3' 
 				placeholder='Message' 
 				onChange={(event) => setMessage(event.target.value)}
 				style={{
@@ -85,7 +85,7 @@ const Contact = ({twilio, theme, colors}) => {
 				)}
 			</p>
 			<div 
-				className='absolute button-small tr-5 shadow2'
+				className='absolute button-small animate shadow2'
 				onClick={formatAndSendSms} 
 				style={{
 						bottom: '3%',

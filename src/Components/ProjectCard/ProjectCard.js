@@ -6,7 +6,7 @@ const ProjectCard = ({title, description, tools, link, image, theme, colors}) =>
 			href={link}
 			target='_blank' 
 			rel="noopener noreferrer"
-			className='tr-5 br-round grow-size pointer padding2 margin3 shadow5 tc no-underline' 
+			className='animate br-round grow-size pointer padding2 margin3 shadow5 tc no-underline' 
 			style={{
 				flex: '0 0 50%',
 				color: colors.font[theme],

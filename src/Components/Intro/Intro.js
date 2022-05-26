@@ -14,11 +14,11 @@ const Intro = ({isIntroOpen, setIsIntroOpen, introContents, setIntroContents, th
 
 	useEffect(() => {
 		if (isIntroOpen) {
-			intro_contents.current.style.transition = '0.5s'
+			intro_contents.current.style.transition = back_element.current.style.transition = getComputedStyle(intro.current).transitionDuration
 			image.current.style.transitionDelay = '0s'
-			back_element.current.style.transitionDelay = '0.5s, 0.5s'
+			back_element.current.style.transitionDelay = Array(2).fill(getComputedStyle(intro.current).transitionDuration).toString()
 			back_element.current.style.transitionProperty = 'visibility, opacity'
-			intro_contents.current.style.transitionDelay = '0.5s, 0.5s'
+			intro_contents.current.style.transitionDelay = Array(2).fill(getComputedStyle(intro.current).transitionDuration).toString()
 			intro_contents.current.style.transitionProperty = 'visibility, opacity'
 			image.current.style.transform = 'scale(0.25)';
 			image.current.style.top = '-40%';
@@ -33,10 +33,10 @@ const Intro = ({isIntroOpen, setIsIntroOpen, introContents, setIntroContents, th
 			intro_contents.current.style.opacity = '1'
 
 		} else {
-			intro_contents.current.style.transition = '0.1s'
+			intro_contents.current.style.transition = back_element.current.style.transition = getComputedStyle(intro.current).transitionDuration.slice(0,-1)/5 + 's'
 			intro_contents.current.style.transitionDelay = '0s'
 			back_element.current.style.transitionDelay = '0s'
-			image.current.style.transitionDelay = '0s, 0.05s'
+			image.current.style.transitionDelay = '0s, ' + getComputedStyle(intro.current).transitionDuration.slice(0,-1)/10 + 's'
 			image.current.style.transitionProperty = 'top, transform'
 			intro_contents.current.style.opacity = '0'
 			intro_contents.current.style.visibility = 'hidden'
@@ -59,7 +59,7 @@ return (
 						setIsIntroOpen(true);
 					}
 				}} 
-				className="screen-width mb3 tr-5 center shadow-2 pointer br-100" 
+				className="screen-width mb3 animate center shadow-2 pointer br-100" 
 				style={{aspectRatio: '1 / 1', position: 'relative', background: colors.background[theme]}}
 			>
 				<svg 
@@ -67,7 +67,7 @@ return (
 					onClick={() => {
 							setIsIntroOpen(false);
 						}}
-					className='hover-orange invisible pointer padding2 margin3 br-100' 
+					className='animate hover-color invisible pointer padding2 margin3 br-100' 
 					style={{position: 'absolute', top:'0%', left:'0%', width: '5%', enableBackground:'new 0 0 512 512'}}
 					xmlns="http://www.w3.org/2000/svg" 
 					xmlnsXlink="http://www.w3.org/1999/xlink" 
@@ -80,7 +80,7 @@ return (
 				>
 					<g>
 						<path 
-							className='tr-5'
+							className='animate'
 							style={{transform: "scale(0.87)"}}
 							xmlns="http://www.w3.org/2000/svg" 
 							d="M17.921,1.505a1.5,1.5,0,0,1-.44,1.06L9.809,10.237a2.5,2.5,0,0,0,0,3.536l7.662,7.662a1.5,1.5,0,0,1-2.121,2.121L7.688,15.9a5.506,5.506,0,0,1,0-7.779L15.36.444a1.5,1.5,0,0,1,2.561,1.061Z" 
@@ -97,11 +97,11 @@ return (
 						setIsIntroOpen(!isIntroOpen);
 					}}
 					src={logo} 
-					className='tr-5 br-100 w-90 pointer'
+					className='animate br-100 w-90 pointer'
 					style={{position: 'absolute', top: '5%', left: '5%'}}
 				/>
-				<div ref={intro_contents} className='tr-5 fs5 w-100 invisible h-85' style={{position: 'absolute', top: '15%'}}>
-					<h2 className='tr-5 br-round center w-50 padding2' style={{background: colors.title[theme], color: colors.font[theme]}}>{introContents}</h2>
+				<div ref={intro_contents} className='animate fs5 w-100 invisible h-85' style={{position: 'absolute', top: '15%'}}>
+					<h2 className='animate br-round center w-50 padding2' style={{background: colors.title[theme], color: colors.font[theme]}}>{introContents}</h2>
 					{introContents === 'Profile' ? 
 						<Profile portfolio={portfolio} theme={theme} colors={colors} /> : 
 						(introContents === 'Projects' ? 

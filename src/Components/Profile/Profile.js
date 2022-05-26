@@ -9,7 +9,7 @@ const Profile = ({portfolio, theme, colors}) => {
 	const age = Math.floor((today-birthdate)/1000/60/60/24/365.25)
 	return (
 			<div className='w-100 relative' style={{height: '75%'}}>
-				<table className='tr-5 margin3' style={{color: colors.font[theme]}}>
+				<table className='animate margin3' style={{color: colors.font[theme]}}>
 					<tbody>
 						<tr className='padding2'>
 							<th className='tl'>Name</th>
@@ -30,7 +30,7 @@ const Profile = ({portfolio, theme, colors}) => {
 				</table>
 				<div className='absolute padding2 margin3 bottom-0 flex' >
 					<a 
-						className='flex justify-center items-center br-100 hover-orange' 
+						className='flex justify-center items-center br-100 hover-color' 
 						target='_blank' 
 						rel="noopener noreferrer"
 						href={portfolio.github} 
@@ -39,7 +39,7 @@ const Profile = ({portfolio, theme, colors}) => {
 						<Github fill={colors.main[theme]} width='70%' />
 					</a>
 					<a 
-						className='button tr-5 shadow2 ma-auto' 
+						className='button animate shadow2 ma-auto' 
 						target='_blank' 
 						rel="noopener noreferrer"
 						href='#' 
@@ -49,7 +49,7 @@ const Profile = ({portfolio, theme, colors}) => {
 					  }}
 					>Resume</a>
 					<a 
-						className='flex justify-center items-center br-100 hover-orange' 
+						className='flex justify-center items-center br-100 hover-color' 
 						target='_blank' 
 						rel="noopener noreferrer"
 						href={portfolio.linkedin} 

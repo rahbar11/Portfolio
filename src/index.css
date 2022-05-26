@@ -10,8 +10,8 @@ body {
   transition: 0.5s color;
 }
 
-.tr-5 {
-  transition: 0.5s;
+.App {
+  text-align: center;
 }
 
 .margin3 {
@@ -24,10 +24,6 @@ body {
 
 .br-round {
   border-radius: 1em;
-}
-
-.hover-orange:hover {
-  background-color: rgba(255, 162, 0, 0.3);
 }
 
 code {
