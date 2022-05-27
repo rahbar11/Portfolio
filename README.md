@@ -11,6 +11,12 @@ Now open the 'App.js' file and find the `//Project Images` section. Now replace 
 
 Now inside the `portfolio` object, there's another object named `projects`, edit all the details inside it accordingly.
 
+## Main Image
+Go to `src/Components/Intro/` and replace Logo.jpg with your own image or logo and rename it to Logo.jpg.
+
+## Favicon/Icons
+Open the 'static' folder and replace the 'favicon.ico', 'logo192.png' and 'logo512.png' files with your 16x16 ico file, 192x192 png file and 512x512 png file respectively and rename them same as before.
+
 ## Colors And Look
 You can also change the website's look and make it totally yours. Simply find the `//Color Palette` section in the 'App.js' file and edit the colors according to yourself.
 
