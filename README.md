@@ -11,7 +11,7 @@ Now open the 'App.js' file and find the `//Project Images` section. Now replace 
 
 Now inside the `portfolio` object, there's another object named `projects`, edit all the details inside it accordingly.
 
-## Main Image
+## Main Image/Logo
 Go to `src/Components/Intro/` and replace Logo.jpg with your own image or logo and rename it to Logo.jpg.
 
 ## Favicon/Icons
