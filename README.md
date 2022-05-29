@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Create Your Portfolio
+Create your own portfolio website by following simple steps:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## General Details
+Open the 'App.js' file inside the 'src' folder and there you'll see an object named `portfolio`, there you should replace the information with your own.
 
-## Available Scripts
+## Projects
+Open the 'Project Images' folder inside the 'src' folder and delete the current images and place your own projects' images in it.
 
-In the project directory, you can run:
+Now open the 'App.js' file and find the `//Project Images` section. Now replace the path and name for your images.
 
-### `npm start`
+Now inside the `portfolio` object, there's another object named `projects`, edit all the details inside it accordingly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Main Image/Logo
+Go to `src/Components/Intro/` and replace the 'logo.png' file with your own image or logo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Favicon/Icons
+Open the 'public' folder and replace the 'favicon.ico', 'logo192.png' and 'logo512.png' files with your 16x16 ico file, 192x192 png file and 512x512 png file respectively.
 
-### `npm test`
+## Colors And Look
+You can also change the website's look and make it totally yours. Simply find the `//Color Palette` section in the 'App.js' file and edit the colors according to yourself.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To edit hover color, transition duration, etc. you should edit the 'App.css' file which is also inside the 'src' folder.
