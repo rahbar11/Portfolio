@@ -1,6 +1,6 @@
 const Sun = ({fill, width, setTheme}) => {
 	return (
-		<svg onClick={()=>{setTheme('light')}} className='tr-5 pointer' fill={fill} width={width} version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlnsXlink="http://www.w3.org/1999/xlink" enableBackground="new 0 0 512 512">
+		<svg onClick={()=>{setTheme('light')}} className='animate pointer' fill={fill} width={width} version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlnsXlink="http://www.w3.org/1999/xlink" enableBackground="new 0 0 512 512">
 		  <g>
 		    <g>
 		      <path d="m256,432.3c-11.3,0-20.4,9.1-20.4,20.4v27.9c0,11.3 9.1,20.4 20.4,20.4s20.4-9.1 20.4-20.4v-27.9c0-11.3-9.1-20.4-20.4-20.4z"/>
