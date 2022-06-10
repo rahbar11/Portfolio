@@ -17,13 +17,13 @@ function App() {
   const portfolio = {
     name: 'Rahbar Khan',
     birthday: '2000-04-27', //YYYY-MM-DD format (required to calculate age)
-    skills: 'Python, JavaScript(React, Node, Express...), HTML, CSS, MS Office(Excel, Word...), Photoshop',
+    skills: 'Python, JavaScript(React, Node, Express...), HTML, CSS, MS Office(Excel, Word...), Adobe Photoshop',
     github: 'https://github.com/rahbar11',
     linkedin: 'https://linkedin.com/in/rahbar11',
     projects: [
       {
         title: 'Portfolio',
-        description: 'This website',
+        description: 'This website. It can be used as a template also.',
         tools: 'JavaScript(React.JS), HTML, CSS, Photoshop',
         link: 'https://github.com/rahbar11/Portfolio',
         image: Portfolio
