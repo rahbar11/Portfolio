@@ -1,6 +1,7 @@
-import './Profile.css'
+import './Profile.css';
 import Github from './Github';
 import LinkedIn from './LinkedIn.js';
+import Resume from './Resume.pdf';
 
 const Profile = ({portfolio, theme, colors}) => {
 	const {name, birthday, skills} = portfolio;
@@ -42,7 +43,7 @@ const Profile = ({portfolio, theme, colors}) => {
 						className='button animate shadow2 ma-auto' 
 						target='_blank' 
 						rel="noopener noreferrer"
-						href='#' 
+						href={Resume} 
 						style={{
 						color: colors.font[theme],
 						background: colors.main[theme]

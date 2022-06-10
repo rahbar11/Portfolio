@@ -19,7 +19,7 @@ function App() {
     birthday: '2000-04-27', //YYYY-MM-DD format (required to calculate age)
     skills: 'Python, JavaScript(React, Node, Express...), HTML, CSS, MS Office(Excel, Word...), Photoshop',
     github: 'https://github.com/rahbar11',
-    linkedin: '#',
+    linkedin: 'https://linkedin.com/in/rahbar11',
     projects: [
       {
         title: 'Portfolio',
