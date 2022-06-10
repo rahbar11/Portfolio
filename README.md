@@ -1,7 +1,7 @@
 # Create Your Portfolio
 Create your own portfolio website by following simple steps:
 
-(Skip to [General Details](##general-details) if you are already familiar with git and react)
+(Skip to [General Details](#general-details) if you are already familiar with git and react)
 * First of all you should have git and node installed on your computer.
 * Now fork this repo.
 * Now click on code and copy the url of your repo.
