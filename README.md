@@ -1,11 +1,12 @@
 # Create Your Portfolio
 Create your own portfolio website by following simple steps:
-(Skip to [General Details](##General-Details) if you are already familiar with git and react)
+
+(Skip to [General Details](##general-details) if you are already familiar with git and react)
 * First of all you should have git and node installed on your computer.
 * Now fork this repo.
-* Now click on code and copy it.
+* Now click on code and copy the url of your repo.
 * Now in your computer open terminal/cmd where you want to copy all the files and run `git clone <copied url>` to clone the repo.
-* Now cd into new directory (it must be named 'Portfolio' so run `cd Portfolio`) and run `npm install` to install node modules (React).
+* Now cd into new directory (it must be named as 'Portfolio' so run `cd Portfolio`) and run `npm install` to install node modules (React).
 
 ## General Details
 Open the 'App.js' file inside the 'src' folder and there you'll see an object named `portfolio`, there you should replace the information with your own.
@@ -19,6 +20,7 @@ Now inside the `portfolio` object, there's another object named `projects`, edit
 
 ## Logo and Resume
 Go to `src/Components/Intro/` and replace the 'logo.png' file with your own image or logo.
+
 In the same folder replace Resume.pdf with your own resume.
 
 ## Favicon/Icons
@@ -31,4 +33,5 @@ To edit hover color, transition duration, etc. you should edit the 'App.css' fil
 
 ## Test and Deploy
 Use `npm start` command to test your website live while editing.
-To deploy the website on github, Open your repo settings and inside pages>source select 'gh-pages' branch and click on save, Now copy the given url and open 'package.json' file and replace homepage url with your url, Now use `npm run deploy` command to deploy your website with your changes.
+
+To deploy the website on github, Open your repo settings and inside pages>source select 'gh-pages' branch and click on save, Now copy the given url and open 'package.json' file and replace homepage url with your copied url, Now use `npm run deploy` command to deploy your website with your changes.
