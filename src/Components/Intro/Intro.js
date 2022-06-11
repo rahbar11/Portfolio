@@ -106,7 +106,7 @@ return (
 						<Profile portfolio={portfolio} theme={theme} colors={colors} /> : 
 						(introContents === 'Projects' ? 
 							<ProjectList projects={portfolio.projects} theme={theme} colors={colors} /> : 
-							(introContents === 'Contact' ? <Contact theme={theme} colors={colors} /> : '')
+							(introContents === 'Contact' ? <Contact theme={theme} colors={colors} myEmail={portfolio.email} /> : '')
 							)}
 				</div>
 			</div>

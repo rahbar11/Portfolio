@@ -1,24 +1,24 @@
 import {useState} from 'react';
 import './Contact.css';
 
-const Contact = ({theme, colors}) => {
+const Contact = ({myEmail, theme, colors}) => {
 
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	const [status, setStatus] = useState("");
 
-	const formatAndSendMsg = () => {
+	const checkAndSendMsg = () => {
 		if (status !== 'sent' && status !== 'pending') {
 			if (email && message) {
 				setStatus('pending');
-				sendMessage(email, message);	
+				sendMessage();	
 			} else {
 				setStatus('fieldIncomplete');
 			}
 		}
 	}
 
-	const sendMessage = (email, message) => {
+	const sendMessage = () => {
 		const params = {email: email, message: message}
 		fetch(`https://portfolio-contact-app.herokuapp.com/send`, {
 		    method: 'POST',
@@ -77,7 +77,7 @@ const Contact = ({theme, colors}) => {
 							"Message sent!" :
 							(status === 'failed' ?
 								"Something went wrong!" :
-								"Rahbarkhan97@gmail.com"
+								myEmail
 							)
 						) 
 					)
@@ -85,7 +85,7 @@ const Contact = ({theme, colors}) => {
 			</p>
 			<div 
 				className='absolute button-small animate shadow2'
-				onClick={formatAndSendMsg} 
+				onClick={checkAndSendMsg} 
 				style={{
 						bottom: '3%',
 						right: '7%',

@@ -2,7 +2,7 @@ import Switch from '../Switch/Switch';
 import Sun from './Sun';
 import Moon from './Moon'
 
-const NavBar = ({setIsIntroOpen, setIntroContents, theme, setTheme, colors}) => {
+const NavBar = ({setIsIntroOpen, setIntroContents, theme, setTheme, colors, contact}) => {
 	return (
 		<>
 			<nav className='animate' style={{display: 'flex', justifyContent: 'flex-end', color: colors.font[theme]}}>
@@ -24,15 +24,18 @@ const NavBar = ({setIsIntroOpen, setIntroContents, theme, setTheme, colors}) => 
 						setIntroContents('Projects');
 						setIsIntroOpen(true);
 					}} 
-					className='fw7 underline-hover pl3 pointer'
+					className={'fw7 underline-hover pl3 pointer' + (contact ? '' : ' pr3')}
 				>Projects</p>
+				{contact ? 
 				<p 
 					onClick={() => {
 						setIntroContents('Contact');
 						setIsIntroOpen(true);
 					}} 
 					className='fw7 underline-hover pl3 pr3 pointer'
-				>Contact</p>
+				>Contact</p> 
+				: ''
+				}
 			</nav>
 		</>
 	)

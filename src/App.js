@@ -17,15 +17,16 @@ function App() {
   const portfolio = {
     name: 'Rahbar Khan',
     birthday: '2000-04-27', //YYYY-MM-DD format (required to calculate age)
-    skills: 'Python, JavaScript(React, Node, Express...), HTML, CSS, MS Office(Excel, Word...), Adobe Photoshop',
+    skills: 'Python, JavaScript (React, Node, Express...), HTML, CSS, MS Office (Excel, Word...), Adobe Photoshop',
+    email: 'rahbarkhan97@gmail.com',
     github: 'https://github.com/rahbar11',
     linkedin: 'https://linkedin.com/in/rahbar11',
     contact: true,
     projects: [
       {
         title: 'Portfolio',
-        description: 'This website. It can be used as a template also.',
-        tools: 'JavaScript(React.JS), HTML, CSS, Photoshop',
+        description: 'This website. It can also be used as a template to create your own portfolio.',
+        tools: 'JavaScript (React.JS), HTML, CSS, Photoshop',
         link: 'https://github.com/rahbar11/Portfolio',
         image: Portfolio
       },
@@ -80,6 +81,7 @@ function App() {
       <NavBar 
         theme={theme} 
         colors = {colors}
+        contact = {portfolio.contact}
         setTheme={setTheme} 
         setIsIntroOpen={setIsIntroOpen} 
         setIntroContents={setIntroContents} 
