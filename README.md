@@ -32,10 +32,10 @@ You can also change the website's look and make it totally yours. Simply find th
 To edit hover color, transition duration, etc. you should edit the 'App.css' file which is also inside the 'src' folder.
 
 ## Contact
-You can hide the contact option from navigation bar by setting `contact` to `false` in the `portfolio` object.
+You can hide the contact option from the navigation bar by setting `contact` to `false` in the `portfolio` object.
 
 ## Test and Deploy
-Use `npm start` command to test your website live while editing.
+Use the `npm start` command to test your website live while editing.
 
 To deploy the website on GitHub, Open your repo settings and inside pages>source select the
-'gh-pages' branch and click on save, Now copy the given URL and open the 'package.json' file and replace 'homepage' URL with your copied URL, Now use `npm run deploy` command to deploy your website with your changes.
+'gh-pages' branch and click on save, Now copy the given URL and open the 'package.json' file and replace the 'homepage' URL with your copied URL, Now use `npm run deploy` command to deploy your website with your changes.
