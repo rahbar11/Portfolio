@@ -20,6 +20,7 @@ function App() {
     skills: 'Python, JavaScript(React, Node, Express...), HTML, CSS, MS Office(Excel, Word...), Adobe Photoshop',
     github: 'https://github.com/rahbar11',
     linkedin: 'https://linkedin.com/in/rahbar11',
+    contact: true,
     projects: [
       {
         title: 'Portfolio',
@@ -63,13 +64,6 @@ function App() {
     }
   }
 
-  const twilio = {
-    phoneNumber: '$YOUR_NUMBER', // '+9198XXXXXXX1'
-    accountSid: 'AC913fc1004184679ec92f439b9a2830a6',
-    authToken: '$TWILIO_AUTH_TOKEN',
-    messagingServiceSid: 'MGdf03208ad653daea144af91447b7edfd'
-  }
-
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setTheme('dark')
@@ -78,6 +72,7 @@ function App() {
 
   useEffect(() => {
       document.body.style = `background: linear-gradient(to bottom, ${colors.gradient[theme]}) no-repeat fixed center;\ncolor: ${colors.font[theme]}`
+      // eslint-disable-next-line
   }, [theme])
 
   return (
@@ -91,7 +86,6 @@ function App() {
       />
       <Intro 
         portfolio={portfolio} 
-        twilio={twilio} 
         isIntroOpen={isIntroOpen} 
         setIsIntroOpen={setIsIntroOpen} 
         introContents={introContents} 

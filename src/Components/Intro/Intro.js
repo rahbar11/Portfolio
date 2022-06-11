@@ -5,7 +5,7 @@ import Contact from '../Contact/Contact';
 import logo from './logo.png';
 import './Intro.css';
 
-const Intro = ({isIntroOpen, setIsIntroOpen, introContents, setIntroContents, theme, colors, portfolio, twilio}) => {
+const Intro = ({isIntroOpen, setIsIntroOpen, introContents, setIntroContents, theme, colors, portfolio}) => {
 
 	const intro = useRef(null)
 	const image = useRef(null)
@@ -71,7 +71,7 @@ return (
 					style={{position: 'absolute', top:'0%', left:'0%', width: '5%', enableBackground:'new 0 0 512 512'}}
 					xmlns="http://www.w3.org/2000/svg" 
 					xmlnsXlink="http://www.w3.org/1999/xlink" 
-					xmlnsSvgjs="http://svgjs.com/svgjs" 
+					xmlnssvgjs="http://svgjs.com/svgjs" 
 					version="1.1" 
 					x="0" 
 					y="0" 
@@ -106,7 +106,7 @@ return (
 						<Profile portfolio={portfolio} theme={theme} colors={colors} /> : 
 						(introContents === 'Projects' ? 
 							<ProjectList projects={portfolio.projects} theme={theme} colors={colors} /> : 
-							(introContents === 'Contact' ? <Contact twilio={twilio} theme={theme} colors={colors} /> : '')
+							(introContents === 'Contact' ? <Contact theme={theme} colors={colors} /> : '')
 							)}
 				</div>
 			</div>

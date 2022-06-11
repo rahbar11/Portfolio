@@ -1,40 +1,39 @@
 import {useState} from 'react';
 import './Contact.css';
 
-const Contact = ({twilio, theme, colors}) => {
+const Contact = ({theme, colors}) => {
 
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	const [status, setStatus] = useState("");
 
-	const {phoneNumber, accountSid, authToken, messagingServiceSid} = twilio;
-
-	const formatAndSendSms = () => {
+	const formatAndSendMsg = () => {
 		if (status !== 'sent' && status !== 'pending') {
 			if (email && message) {
-				const msg = `E-Mail: ${email}\n\nMessage:\n${message}`;
 				setStatus('pending');
-				sendMessage(phoneNumber, msg);	
+				sendMessage(email, message);	
 			} else {
 				setStatus('fieldIncomplete');
 			}
 		}
 	}
 
-	const sendMessage = (number, message) => {
-		const params = {To: number, Body: message, MessagingServiceSid: messagingServiceSid}
-		const formBody = Object.keys(params).map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(params[key])).join('&')
-		fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
+	const sendMessage = (email, message) => {
+		const params = {email: email, message: message}
+		fetch(`http://localhost:3001/send`, {
 		    method: 'POST',
-		    headers: {Authorization: "Basic " + btoa(accountSid + ":" + authToken), 'Content-Type': 'application/x-www-form-urlencoded'},
-		    body: formBody
-		}).then((response) => {
-			if (response.status===201) {
+			headers: {'Content-Type': 'application/json'},
+		    body: JSON.stringify(params)
+		})
+		.then(response => response.json())
+		.then(response => {
+			if (response.statusCode===202) {
 				setStatus("sent")
 			} else {
 				setStatus("failed")
 			}
-		}).catch((error) => setStatus("failed"))
+		})
+		.catch((error) => setStatus("failed"))
 	}
 
 	return (
@@ -86,7 +85,7 @@ const Contact = ({twilio, theme, colors}) => {
 			</p>
 			<div 
 				className='absolute button-small animate shadow2'
-				onClick={formatAndSendSms} 
+				onClick={formatAndSendMsg} 
 				style={{
 						bottom: '3%',
 						right: '7%',
