@@ -38,4 +38,4 @@ You can hide the contact option from the navigation bar by setting `contact` to 
 Use the `npm start` command to test your website live while editing.
 
 To deploy the website on GitHub, Open your repo settings and inside pages>source select the
-'gh-pages' branch and click on save, Now copy the given URL and open the 'package.json' file and replace the 'homepage' URL with your copied URL, Now use `npm run deploy` command to deploy your website with your changes.
+'gh-pages' branch and click on save, Now copy the given URL and open the 'package.json' file and replace the 'homepage' URL with your copied URL, Now use the `npm run deploy` command to deploy your website with your changes.
