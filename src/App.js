@@ -6,7 +6,8 @@ import './App.css';
 
 //Project Images:
 import Renin from './Project Images/Renin Chan.jpg';
-import Portfolio from './Project Images/Portfolio.png'
+import Portfolio from './Project Images/Portfolio.png';
+import ExamManagement from './Project Images/Exam-Management.jpg';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -23,6 +24,13 @@ function App() {
     linkedin: 'https://linkedin.com/in/rahbar11',
     contact: true,
     projects: [
+      {
+        title: 'Exam Management',
+        description: 'A website for teachers to manage exams and questions.',
+        tools: 'Express.JS, MongoDB, Mongoose, HTML (EJS), JWT, Bcrypt',
+        link: 'https://github.com/rahbar11/Exam-Management',
+        image: ExamManagement
+      },
       {
         title: 'Portfolio',
         description: 'This website. It can also be used as a template to create your own portfolio.',
