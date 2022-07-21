@@ -8,6 +8,7 @@ import './App.css';
 import Renin from './Project Images/Renin Chan.jpg';
 import Portfolio from './Project Images/Portfolio.png';
 import ExamManagement from './Project Images/Exam-Management.jpg';
+import Examination from './Project Images/Examination.png';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -24,6 +25,13 @@ function App() {
     linkedin: 'https://linkedin.com/in/rahbar11',
     contact: true,
     projects: [
+      {
+        title: 'Examination',
+        description: 'A website to take online exams, available in "Exam Management" project.',
+        tools: 'React.JS, react-router-dom, validator',
+        link: 'https://github.com/rahbar11/Examination',
+        image: Examination
+      },
       {
         title: 'Exam Management',
         description: 'A website for teachers to manage exams and questions.',
