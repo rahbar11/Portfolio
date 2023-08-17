@@ -20,7 +20,7 @@ const Contact = ({myEmail, theme, colors}) => {
 
 	const sendMessage = () => {
 		const params = {email: email, message: message}
-		fetch(`https://portfolio-contact-app.herokuapp.com/send`, {
+		fetch(`https://portfolio-server-bgrd.onrender.com/send`, {
 		    method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 		    body: JSON.stringify(params)
