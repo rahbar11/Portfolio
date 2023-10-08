@@ -1,19 +1,24 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.d9d95750.css",
-    "main.js": "/Portfolio/static/js/main.2fbc2e67.js",
+    "main.js": "/Portfolio/static/js/main.f119d7e9.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Resume.pdf": "/Portfolio/static/media/Resume.101f5e3f3803225ce73e.pdf",
+    "static/media/Bingo.png": "/Portfolio/static/media/Bingo.681289fab27221f29abc.png",
     "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.acbe49f9efb6ebb95442.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.acbe49f9efb6ebb95442.png",
+    "static/media/Biggee.png": "/Portfolio/static/media/Biggee.3dd4d3d8dc6a4782b65c.png",
+    "static/media/Radiant Rush.jpg": "/Portfolio/static/media/Radiant Rush.4d04c3c7a1fc3bef225d.jpg",
+    "static/media/Fitstreet.png": "/Portfolio/static/media/Fitstreet.e2edec2d67cda3573999.png",
     "static/media/Renin Chan.jpg": "/Portfolio/static/media/Renin Chan.7b8da00c065da23ed323.jpg",
+    "static/media/Whatever Talk.png": "/Portfolio/static/media/Whatever Talk.dd5bc4faad1435a8632e.png",
     "index.html": "/Portfolio/index.html",
     "main.d9d95750.css.map": "/Portfolio/static/css/main.d9d95750.css.map",
-    "main.2fbc2e67.js.map": "/Portfolio/static/js/main.2fbc2e67.js.map",
+    "main.f119d7e9.js.map": "/Portfolio/static/js/main.f119d7e9.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9d95750.css",
-    "static/js/main.2fbc2e67.js"
+    "static/js/main.f119d7e9.js"
   ]
 }
