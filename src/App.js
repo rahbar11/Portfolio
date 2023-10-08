@@ -10,6 +10,11 @@ import Portfolio from './Project Images/Portfolio.png';
 import ExamManagement from './Project Images/Exam-Management.jpg';
 import Examination from './Project Images/Examination.png';
 import ChatS from './Project Images/ChatS.png';
+import RadiantRush from './Project Images/Radiant Rush.jpg';
+import Bingo from './Project Images/Bingo.png';
+import Fitstreet from './Project Images/Fitstreet.png';
+import Biggee from './Project Images/Biggee.png';
+import WhateverTalk from './Project Images/Whatever Talk.png';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -26,6 +31,41 @@ function App() {
     linkedin: 'https://linkedin.com/in/rahbar11',
     contact: true,
     projects: [
+      {
+        title: 'Fitstreet',
+        description: 'Fitness tracking application for competing and sharing activities',
+        tools: 'Node.JS, Mongo DB',
+        link: 'https://thefitstreet.com',
+        image: Fitstreet
+      },
+      {
+        title: 'Biggee',
+        description: 'A short video sharing application, where users can participate in contests',
+        tools: 'Node.JS, Mongo DB, Socket.IO, EJS',
+        link: '#',
+        image: Biggee
+      },
+      {
+        title: 'Whatever Talk',
+        description: 'Online dating app with chat, audio and video call functionality',
+        tools: 'Node.JS, Mongo DB, Twilio, EJS',
+        link: '#',
+        image: WhateverTalk
+      },
+      {
+        title: 'Bingo',
+        description: 'Classic Bingo game with leaderboard and stats',
+        tools: 'React Native, Node.JS, Mongo DB, Socket.IO',
+        link: 'https://play.google.com/store/apps/details?id=com.rtistikdev.bingo',
+        image: Bingo
+      },
+      {
+        title: 'Radiant Rush',
+        description: 'A simple ball game, avoid obstacles and collect diamonds',
+        tools: 'Unity, C#',
+        link: 'https://play.google.com/store/apps/details?id=com.RtistiKDev.RadiantRush',
+        image: RadiantRush
+      },
       {
         title: 'ChatS',
         description: 'Secure chatting website with encrypted messaging.',
