@@ -19,7 +19,7 @@ function App() {
   const portfolio = {
     name: 'Rahbar Khan',
     birthday: '2000-04-27', //YYYY-MM-DD format (required to calculate age)
-    skills: 'Python, JavaScript (React, Node, Express...), HTML, CSS, MS Office (Excel, Word...), Adobe Photoshop',
+    skills: 'Python, JavaScript (React, Node, Express...), C#, HTML, CSS, Unity, SQL, MS Office (Excel, Word...), Adobe Photoshop',
     email: 'rahbarkhan97@gmail.com',
     github: 'https://github.com/rahbar11',
     linkedin: 'https://linkedin.com/in/rahbar11',
