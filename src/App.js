@@ -9,6 +9,7 @@ import Renin from './Project Images/Renin Chan.jpg';
 import Portfolio from './Project Images/Portfolio.png';
 import ExamManagement from './Project Images/Exam-Management.jpg';
 import Examination from './Project Images/Examination.png';
+import ChatS from './Project Images/ChatS.png';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -25,6 +26,13 @@ function App() {
     linkedin: 'https://linkedin.com/in/rahbar11',
     contact: true,
     projects: [
+      {
+        title: 'ChatS',
+        description: 'Secure chatting website with encrypted messaging.',
+        tools: 'React.JS, Node.JS, Socket.IO',
+        link: 'https://github.com/rahbar11/ChatS',
+        image: ChatS
+      },
       {
         title: 'Examination',
         description: 'A website to take online exams, available in "Exam Management" project.',
